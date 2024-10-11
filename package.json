@@ -1,0 +1,19 @@
+{
+  "name": "seanramolete-css-precompiler",
+  "version": "1.0.0",
+  "scripts": {
+    "defaultstart": "lite-server --baseDir=\"public\"",
+    "start": "concurrently \"npm run defaultstart\" \"npm run sassstart\"",
+    "sassstart": "sass --watch src/scss:public/assets/css"
+  },
+  "keywords": [],
+  "author": "Sean Ramolete",
+  "license": "private",
+  "private": true,
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.79.5"
+  }
+}
